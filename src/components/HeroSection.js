@@ -6,17 +6,18 @@ import {
     Text,
     Button,
     Stack,
-    Icon,
-    useColorMode,
-    createIcon,
+
+    useColorMode
 } from '@chakra-ui/react';
 import {
+    // eslint-disable-next-line 
     BrowserRouter as Router,
     Link
 } from "react-router-dom";
 
 
 function HeroSection() {
+    // eslint-disable-next-line 
     const { colorMode, toggleColorMode } = useColorMode()
 
     return (

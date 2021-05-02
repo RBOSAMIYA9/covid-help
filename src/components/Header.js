@@ -5,26 +5,29 @@ import { ColorModeSwitcher } from '../ColorModeSwitcher';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons'
 import { NavHashLink } from 'react-router-hash-link';
 import {
+    // eslint-disable-next-line 
     BrowserRouter as Router,
     Link
 } from "react-router-dom";
 
-{/* <ColorModeSwitcher justifySelf="flex-end" /> */ }
+
 
 
 function Header() {
+
+    // eslint-disable-next-line 
     const { colorMode, toggleColorMode } = useColorMode()
-    const [show, setShow] = useState(false);
+    
 
     const [display, changeDisplay] = useState('none')
 
-    const MenuItems = ({ children }) => (
-        <Text mt={{ base: 4, md: 0 }} mr={6} display="block">
-            {children}
-        </Text>
-    );
+    // const MenuItems = ({ children }) => (
+    //     <Text mt={{ base: 4, md: 0 }} mr={6} display="block">
+    //         {children}
+    //     </Text>
+    // );
 
-    const handleToggle = () => setShow(!show);
+    // const handleToggle = () => setShow(!show);
     return (
         <>
             <Box w="100%" p={4} color="black" id="head">
@@ -78,7 +81,6 @@ function Header() {
                     w='100vw'
                     display={display}
                     bgColor="gray.50"
-                    zIndex={20}
                     h="100vh"
                     pos="fixed"
                     top="0"
@@ -126,7 +128,6 @@ function Header() {
 
                         <Link to="/search-donors">
                             <Button
-                                color="black"
                                 as="a"
                                 variant="ghost"
                                 aria-label="About"
@@ -159,7 +160,7 @@ function Header() {
                              </Button>
                         </Link>
 
-                        
+
 
 
                     </Flex>

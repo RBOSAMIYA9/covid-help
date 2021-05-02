@@ -1,13 +1,16 @@
 import React from 'react'
-import { Box, Flex, Button, Stack, Heading, Image, Text, useColorMode, UnorderedList, ListItem } from "@chakra-ui/react"
+import { Box, Button, Stack, Heading, Text, useColorMode, UnorderedList, ListItem } from "@chakra-ui/react"
 import plasmaChart from '../images/plasmaChart.jpeg'
 
 import {
+    // eslint-disable-next-line 
     BrowserRouter as Router,
     Link
 } from "react-router-dom";
 
 function WhoCanDonate() {
+
+    // eslint-disable-next-line 
     const { colorMode, toggleColorMode } = useColorMode()
     return (
         <>

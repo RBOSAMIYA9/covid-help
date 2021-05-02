@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import Header from '../components/Header'
 import SearchBar from '../components/SearchBar'
-import { Box, Center, Button, Input, Text } from '@chakra-ui/react'
+import { Box, Text } from '@chakra-ui/react'
 import DonorCard from '../components/DonorCard'
 import Footer from '../components/Footer'
 import { projectFirestore } from '../firebase/firebaseConfig'
@@ -37,7 +37,7 @@ function SearchDonors() {
 
 
 
-
+        // eslint-disable-next-line
     }, [])
 
 
@@ -100,7 +100,7 @@ function SearchDonors() {
             )
         }
 
-
+        // eslint-disable-next-line 
     }, [data])
 
     return (

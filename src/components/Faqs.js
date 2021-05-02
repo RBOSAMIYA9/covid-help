@@ -3,15 +3,17 @@ import { Accordion, AccordionButton, useColorMode, Heading, AccordionPanel, Acco
 
 
 function Faqs() {
+
+    // eslint-disable-next-line
     const { colorMode, toggleColorMode } = useColorMode()
     return (
         <>
 
 
             <Box pb="12">
-                <Heading  color={colorMode === "light" ? "black" : "orange"} pt="12" mb="12">Frequently Asked questions</Heading>
-                <Box ml={[4, 4, 4, 12]} mr={[4, 4, 4, 12]} pl={[4, 4, 4, 12]} 
-                pr={[4, 4, 4, 12]}  >
+                <Heading color={colorMode === "light" ? "black" : "orange"} pt="12" mb="12">Frequently Asked questions</Heading>
+                <Box ml={[4, 4, 4, 12]} mr={[4, 4, 4, 12]} pl={[4, 4, 4, 12]}
+                    pr={[4, 4, 4, 12]}  >
                     <Accordion allowMultiple >
                         <AccordionItem >
                             <h2>

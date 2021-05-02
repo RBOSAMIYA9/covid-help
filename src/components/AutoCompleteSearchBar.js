@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useCombobox } from 'downshift'
-import { Box, Center, useColorMode, Button, InputGroup, InputRightElement, Input, UnorderedList, ListItem } from '@chakra-ui/react'
+import { Box, useColorMode, InputGroup, InputRightElement, Input, UnorderedList, ListItem } from '@chakra-ui/react'
 import { GoLocation } from "react-icons/go";
 
 const menuStyles = {
@@ -19,11 +19,11 @@ const comboboxStyles = { display: 'inline-block', marginLeft: '5px', width: '100
 function AutoCompleteSearchBar({ items, onChange }) {
 
     const [inputItems, setInputItems] = useState(items)
+    
+    // eslint-disable-next-line
     const { colorMode, toggleColorMode } = useColorMode()
     const {
         isOpen,
-        getToggleButtonProps,
-        getLabelProps,
         getMenuProps,
         getInputProps,
         getComboboxProps,

@@ -36,10 +36,10 @@ breakpoints.md = breakpoints[1];
 breakpoints.lg = breakpoints[2];
 breakpoints.xl = breakpoints[3];
 
-const newTheme = {
-  ...theme,
-  breakpoints
-};
+// const newTheme = {
+//   ...theme,
+//   breakpoints
+// };
 
 
 

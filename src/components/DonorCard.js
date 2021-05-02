@@ -1,4 +1,4 @@
-import { Box, Grid, VStack, Text, Badge } from '@chakra-ui/react'
+import { Box, VStack, Text, Badge } from '@chakra-ui/react'
 import { AiOutlineHeart } from 'react-icons/ai'
 import { GoLocation } from 'react-icons/go'
 import { BiPhone } from 'react-icons/bi'
@@ -11,7 +11,7 @@ function DonorCard({ data }) {
         <>
             <Box width={['100%', 'md', 'lg', 'md']} pl={[3, 3, 8, 8]} pr={[3, 3, 8, 8]} pt="8" pb="8"
                 justifyContent={['center', 'center', 'center', 'flex-start']} className="cardCss">
-                <Box htmlFor="card" p="15px" borderRadius="md" shadow="lg" _hover={{
+                <Box htmlFor="card" p="15px"  shadow="lg" _hover={{
                     boxShadow: "2xl"
                 }}
                     borderRadius="lg"
@@ -43,7 +43,7 @@ function DonorCard({ data }) {
                         </Box>
                         <Box>
                             <Box d="flex" alignItems="center" border="1px" borderColor="gray.200" p="2">
-                                <BiPhone />&nbsp;<a href={"tel:"+data.mobileNo}>{data.mobileNo}</a>
+                                <BiPhone />&nbsp;<a href={"tel:" + data.mobileNo}>{data.mobileNo}</a>
                             </Box>
                         </Box>
                     </VStack>

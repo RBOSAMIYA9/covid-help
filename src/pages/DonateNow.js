@@ -1,6 +1,5 @@
 import {
   Heading, Text,
-  Flex,
   Box,
   FormControl,
   FormLabel,
@@ -28,10 +27,10 @@ import Thankyou from './Thankyou'
 
 function DonateNow() {
 
+  // eslint-disable-next-line 
   const { colorMode, toggleColorMode } = useColorMode()
 
   const { handleSubmit, register, setValue, control } = useForm();
-  const [data, setData] = useState(null);
   const [city, setCity] = useState("")
   const [filled, setFilled] = useState(false);
 
@@ -41,7 +40,7 @@ function DonateNow() {
 
     console.log(data);
     data.status = "Not Varifed"
-    console.log("form success",data)
+    console.log("form success", data)
     var collectionRef = projectFirestore.collection('donorData')
 
     collectionRef.add({ ...data, "createdAt": timeStamp(), "updatedAt": timeStamp() }).then((ref) => {
@@ -52,7 +51,7 @@ function DonateNow() {
     console.log("data", data);
     // dbref.add()
 
-    
+
 
 
   }

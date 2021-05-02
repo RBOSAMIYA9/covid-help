@@ -1,12 +1,12 @@
 import { useState } from 'react'
-import { Heading, Center, Select, InputGroup, Text, useColorMode, InputRightElement, Button, Box } from '@chakra-ui/react'
+import { Heading, Center, Select,  Text, useColorMode, Button, Box } from '@chakra-ui/react'
 import AutoCompleteSearchBar from '../components/AutoCompleteSearchBar'
 import { useForm, Controller } from "react-hook-form";
 
 
 
 // const items = [
-//     'Neptunium',
+//     'Neptunium', 
 //     'Plutonium',
 //     'Americium',
 //     'Curium',
@@ -38,9 +38,10 @@ import { useForm, Controller } from "react-hook-form";
 
 function SearchBar({ list, setterMethod }) {
 
+    // eslint-disable-next-line 
     const { colorMode, toggleColorMode } = useColorMode()
-    const { handleSubmit, register, reset, setValue, control } = useForm();
-    const [submit, setsubmit] = useState(false);
+    const { handleSubmit, register, setValue, control } = useForm();
+    
     const [showError, setShowError] = useState(false);
 
 

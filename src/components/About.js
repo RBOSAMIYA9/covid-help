@@ -2,6 +2,7 @@ import { Box, Heading, Button, useColorMode } from '@chakra-ui/react'
 import React from 'react'
 
 function About() {
+    // eslint-disable-next-line
     const { colorMode, toggleColorMode } = useColorMode()
     return (
         <>
@@ -12,7 +13,7 @@ function About() {
 
                     It is a non commercial initiative started with an intention of helping people out in whatever skills I have. If you want to reach out and understand more about the initiative, you can get in touch me him on the below handle
                 <br />
-                    <a href="https://ravindrabosamiya.tech" target="_blank">
+                    <a href="https://ravindrabosamiya.tech" target="_blank" rel="noreferrer">
                         <Button mt="12" mb="12"
                             colorScheme={'orange.300'}
 

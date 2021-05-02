@@ -1,10 +1,12 @@
 import React from 'react'
-import { Box, Flex, Button, Stack, Heading, Image, Text, useColorMode, IconButton } from "@chakra-ui/react"
+import { Box, Button, Stack, Heading, Text, useColorMode } from "@chakra-ui/react"
 import WhatsappChatImage from "../images/whatsappChat.png"
 import { FaWhatsapp } from "react-icons/fa";
 
 
 function WhatsappSection() {
+
+    // eslint-disable-next-line 
     const { colorMode, toggleColorMode } = useColorMode()
     return (
         <>

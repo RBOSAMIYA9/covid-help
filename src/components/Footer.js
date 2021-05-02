@@ -4,6 +4,8 @@ import { NavHashLink } from 'react-router-hash-link';
 import { ColorModeSwitcher } from '../ColorModeSwitcher';
 
 function Footer() {
+
+    // eslint-disable-next-line
     const { colorMode, toggleColorMode } = useColorMode()
     return (
         <>

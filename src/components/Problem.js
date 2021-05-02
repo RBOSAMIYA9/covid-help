@@ -1,17 +1,17 @@
 import React from 'react'
 import HospitalImage from '../images/hospital-Image.png'
-import { Box, Flex, Button, Stack, Heading, Image, Text, useColorMode, IconButton, Spacer } from "@chakra-ui/react"
+import { Box, Stack, Heading, Image, Text } from "@chakra-ui/react"
 function Problem() {
     return (
         <>
             <Heading as="h2">
                 Problem
             </Heading>
-            <Box ml={[4, 8, 10, 12]} mr={[4, 8, 10, 12]} mt="10"display="flex" alignItems="center" flexDirection={["column", "column", "cloumn", "row"]} >
+            <Box ml={[4, 8, 10, 12]} mr={[4, 8, 10, 12]} mt="10" display="flex" alignItems="center" flexDirection={["column", "column", "cloumn", "row"]} >
 
                 <Image objectFit="cover" src={HospitalImage} pl="8" pr="8" />
 
-                <Stack textAlign="left"  ml={[4, 8, 10, 12]} mr={[4, 8, 10, 12]} pl="6" pl={[0, 0, 5, 8]}>
+                <Stack textAlign="left" ml={[4, 8, 10, 12]} mr={[4, 8, 10, 12]} pl={[0, 0, 5, 8]}>
                     <Text as="p" fontSize="md"  >
                         COVID-19 has been on a rampage in our country since the past 1 year. From less than 100 cases in February 2020, we are now having more than ~4,00,000/day cases.
 
@@ -23,7 +23,7 @@ function Problem() {
                         But since there are very few plasma donors available, a lot of people who can be saved using this therapy are not getting the required treatment.
                     </Text>
                 </Stack>
-                
+
             </Box>
         </>
     )

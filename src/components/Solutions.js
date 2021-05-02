@@ -1,11 +1,14 @@
 import React from 'react'
-import { Box, Flex, Button, Stack, Heading, Image, Text, useColorMode, IconButton } from "@chakra-ui/react"
+import { Box, Button, Stack, Heading, Text, useColorMode } from "@chakra-ui/react"
 import {
+    // eslint-disable-next-line 
     BrowserRouter as Router,
     Link
 } from "react-router-dom";
 
 function Solutions() {
+
+    // eslint-disable-next-line 
     const { colorMode, toggleColorMode } = useColorMode()
     return (
         <>
@@ -48,6 +51,7 @@ function Solutions() {
                                 _hover={{
                                     boxShadow: "dark-lg"
                                 }}
+                                // eslint-disable-next-line 
                                 colorScheme={colorMode === "light" ? "white" : "orange"}
                                 color={colorMode === "light" ? "black" : "orange"}
                             >Find Donors</Button>
